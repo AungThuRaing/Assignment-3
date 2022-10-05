@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Number Generate</title>
+</head>
+<body>
+</body>
+    <h1 id="number">Please press 'your code number'</h1>
+    <button onclick="random()" style="border-radius:20px">Your Code Number</button>
+    
+
+    <script>
+        let  userInput = prompt('Please Enter the number what you like');
+        userInput = parseInt(userInput);
+
+        let randomnumber = Math.floor(Math.random()*userInput)+ 100;
+
+        function random(){
+            document.getElementById('number').innerHTML ="This's your code:"+randomnumber;
+        }
+
+
+    </script>
+</body>
+</html>
